@@ -147,7 +147,7 @@
 <div class="login-wrapper">
     <div class="login-card">
         <img src="{{ asset('images/UT_Header.webp') }}" class="logo" alt="Universitas Terbuka">
-        <h1>{{ $strings['welcomeHeadline'] ?? 'Laboratorium Digital Sosiologi' }}</h1>
+        <h1>{{ $strings['welcomeHeadline'] ?? 'Sosiologi Digital Library' }}</h1>
         <p class="intro">{{ $strings['welcomeCopy'] ?? 'Masuk untuk memulai pengelolaan modul, materi, dan aktivitas pembelajaran.' }}</p>
 
         @if(!empty($error))
