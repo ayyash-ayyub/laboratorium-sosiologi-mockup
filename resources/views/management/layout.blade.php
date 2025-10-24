@@ -150,11 +150,15 @@
                     <nav class="mt-3 space-y-1.5">
                         <a href="{{ route('management.blog.create') }}"
                            class="nav-link {{ $activeMenu === 'blog-add' ? 'bg-sky-100/70 text-sky-700 border border-sky-200 shadow-sm' : 'text-slate-700' }} block rounded-lg px-3 py-2 text-sm font-medium hover:bg-slate-100 transition">
-                            Add Blog
+                            Tambah Publikasi
                         </a>
                         <a href="{{ route('management.blog.index') }}"
                            class="nav-link {{ $activeMenu === 'blog-list' ? 'bg-sky-100/70 text-sky-700 border border-sky-200 shadow-sm' : 'text-slate-700' }} block rounded-lg px-3 py-2 text-sm font-medium hover:bg-slate-100 transition">
                             Daftar Blog
+                        </a>
+                        <a href="{{ route('management.publication.user') }}"
+                           class="nav-link {{ $activeMenu === 'publication-user' ? 'bg-sky-100/70 text-sky-700 border border-sky-200 shadow-sm' : 'text-slate-700' }} block rounded-lg px-3 py-2 text-sm font-medium hover:bg-slate-100 transition">
+                            Publikasi User
                         </a>
                     </nav>
                 </div>

@@ -13,4 +13,5 @@ Route::get('/management-content/discussions/forum', [AuthController::class, 'dis
 Route::get('/management-content/discussions/moderation', [AuthController::class, 'discussionModeration'])->name('management.discussions.moderation');
 Route::get('/management-content/blog', [AuthController::class, 'blogIndex'])->name('management.blog.index');
 Route::get('/management-content/blog/add', [AuthController::class, 'blogCreate'])->name('management.blog.create');
+Route::get('/management-content/publication/user', [AuthController::class, 'publicationUser'])->name('management.publication.user');
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

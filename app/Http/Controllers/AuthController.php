@@ -424,6 +424,20 @@ class AuthController extends Controller
         );
     }
 
+    public function publicationUser(Request $request)
+    {
+        if (!$request->session()->get('authenticated')) {
+            return redirect()->route('login');
+        }
+
+        return $this->renderManagement(
+            $request,
+            'management.publication_user',
+            [],
+            'publication-user'
+        );
+    }
+
     public function logout(Request $request)
     {
         $request->session()->invalidate();
